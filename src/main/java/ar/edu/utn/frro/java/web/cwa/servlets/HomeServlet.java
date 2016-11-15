@@ -1,4 +1,4 @@
-package ar.edu.utn.frro.java.web.cwa;
+package ar.edu.utn.frro.java.web.cwa.servlets;
 
 import java.io.IOException;
 
