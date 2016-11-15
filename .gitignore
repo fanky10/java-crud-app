@@ -10,3 +10,5 @@ target/
 nbactions.xml
 nb-configuration.xml
 
+# Intellij IDEA
+.idea/
