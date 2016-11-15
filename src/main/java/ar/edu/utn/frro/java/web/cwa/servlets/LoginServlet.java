@@ -28,7 +28,7 @@ public class LoginServlet extends HttpServlet {
         // does not change current path
         request.setAttribute("pageTitle", "Login");
         request.setAttribute("welcomeMessage","Ingrese su usuario y contraseña");
-        getServletContext().getRequestDispatcher("/WEB-INF/pages/login.jsp").forward(request, response);
+        getServletContext().getRequestDispatcher("/WEB-INF/pages/public/login.jsp").forward(request, response);
     }
 
     /**
@@ -42,7 +42,7 @@ public class LoginServlet extends HttpServlet {
             // redirects creating a new request
             response.sendRedirect("home");
         } else {
-            request.setAttribute("errorMessage", "No es admin");
+            request.setAttribute("errorMessage", "Credenciales Incorrectas");
             doGet(request, response);
         }
     }

@@ -20,7 +20,7 @@ public class HomeServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setAttribute("welcomeMessage", "Bienvenido internauta!");
 		request.setAttribute("homeTitle", "CRUD PoC");
-		getServletContext().getRequestDispatcher("/WEB-INF/pages/home.jsp").forward(request, response);
+		getServletContext().getRequestDispatcher("/WEB-INF/pages/public/home.jsp").forward(request, response);
 	}
 
 	/**

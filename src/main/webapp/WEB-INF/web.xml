@@ -12,16 +12,6 @@
     <welcome-file-list>
         <welcome-file>home</welcome-file>
     </welcome-file-list>
-    <servlet>
-        <description/>
-        <display-name>BicicletasServlet</display-name>
-        <servlet-name>BicicletasServlet</servlet-name>
-        <servlet-class>ar.edu.utn.frro.java.web.cwa.servlets.BicicletasServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>BicicletasServlet</servlet-name>
-        <url-pattern>/bicicletas</url-pattern>
-    </servlet-mapping>
     <filter>
         <display-name>UserFilter</display-name>
         <filter-name>UserFilter</filter-name>
@@ -29,18 +19,8 @@
     </filter>
     <filter-mapping>
         <filter-name>UserFilter</filter-name>
-        <url-pattern>/secure/*</url-pattern>
+        <url-pattern>/admin/*</url-pattern>
     </filter-mapping>
-    <servlet>
-        <description/>
-        <display-name>SecuredResourcesServlet</display-name>
-        <servlet-name>SecuredResourcesServlet</servlet-name>
-        <servlet-class>ar.edu.utn.frro.java.web.cwa.servlets.SecuredResourcesServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>SecuredResourcesServlet</servlet-name>
-        <url-pattern>/secure/usuario</url-pattern>
-    </servlet-mapping>
     <servlet>
         <description/>
         <display-name>LoginServlet</display-name>
